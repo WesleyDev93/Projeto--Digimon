@@ -26,33 +26,106 @@ const energia = document.querySelector ('.numeroEnergia');
 
 const amizade = document.querySelector ('.numeroAmizade');
 
-const poder = document.querySelector ('.numeroPoder');
+const nivel = document.querySelector ('.numeroNivel');
 
 
 
-//console.log (forca);
+// Personagem
+
+const div = document.querySelector ('.evolucao');
+
+
+const koromon = document.querySelector ('.koromon');
+
+const agumon = document.querySelector  ('.agumon');
+
+const greymon = document.querySelector ('.greymon');
+
+const metalgreymon = document.querySelector ('.metalgreymon');
+
+const wargreymon = document.querySelector ('.wargreymon');
+
+
+//console.log (div);
+
+
 
 // Eventos
 
 
+
+// FORÇA
 botaoForca.addEventListener ('click', () =>{
           
-   const multiplicador01 = 20;
+   const resultadoForca = Math.floor( Math.random() * 3000);  
 
-   const  multiplicador02 = 50;
+     
+   forca.textContent = resultadoForca;
 
-   const resultado = multiplicador01 * multiplicador02;
-
-   forca.textContent = resultado;
-
-   
-   trilha.play ()
-  
-
+   alteraNiveis ();
 });
 
 
-if (forca === 1000) {
+// VELOCIDADE
+botaoVelocidade.addEventListener ('click', () =>{  
+
+    const resultadoVelocidade= Math.floor( Math.random() * 4000);  
+
+
+    velocidade.textContent = resultadoVelocidade;
+ 
+    alteraNiveis ();
+ });
+
+
+
+// ENERGIA
+ botaoEnergia.addEventListener ('click', () =>{
+           
+    const resultadoEnergia = Math.floor( Math.random() * 5000); 
     
 
-}
+    energia.textContent = resultadoEnergia;
+    
+    alteraNiveis ();
+    
+ });
+
+
+
+// AMIZADE
+ botaoAmizade.addEventListener ('click', () =>{
+          
+    const resultadoAmizade = Math.floor( Math.random() * 10000);  
+
+    amizade.textContent = resultadoAmizade;
+    
+    alteraNiveis ();
+    
+ });
+
+
+// NIVEIS
+
+
+
+
+
+
+//DIGIEVOLUCAO 
+
+
+
+   
+    
+
+
+
+
+
+
+
+
+
+
+  
