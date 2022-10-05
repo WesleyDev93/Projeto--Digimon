@@ -2,13 +2,31 @@
 
 const botaoForca = document.querySelector ('.forca');
 
+
 const botaoVelocidade = document.querySelector ('.velocidade');
+
 
 const botaoEnergia = document.querySelector ('.energia');
 
+
 const botaoAmizade = document.querySelector ('.amizade');
 
-const botaoDigievolucao = document.querySelector ('.digievolucao');
+
+const nivel10 = document.querySelector ('.nivel10');
+
+
+const nivel20 = document.querySelector ('.nivel20');
+
+
+const nivel30 = document.querySelector ('.nivel30');
+
+
+const nivel40 = document.querySelector ('.nivel40');
+
+
+const nivel50 = document.querySelector ('.nivel50');
+
+
 
 // audio
 
@@ -28,7 +46,7 @@ const amizade = document.querySelector ('.numeroAmizade');
 
 const nivel = document.querySelector ('.numeroNivel');
 
-
+const niveisPoder =  ['10', '20', '30', '40', '50'];
 
 // Personagem
 
@@ -62,7 +80,6 @@ botaoForca.addEventListener ('click', () =>{
      
    forca.textContent = resultadoForca;
 
-   alteraNiveis ();
 });
 
 
@@ -74,7 +91,7 @@ botaoVelocidade.addEventListener ('click', () =>{
 
     velocidade.textContent = resultadoVelocidade;
  
-    alteraNiveis ();
+    
  });
 
 
@@ -87,7 +104,7 @@ botaoVelocidade.addEventListener ('click', () =>{
 
     energia.textContent = resultadoEnergia;
     
-    alteraNiveis ();
+   
     
  });
 
@@ -100,7 +117,7 @@ botaoVelocidade.addEventListener ('click', () =>{
 
     amizade.textContent = resultadoAmizade;
     
-    alteraNiveis ();
+   
     
  });
 
@@ -108,13 +125,46 @@ botaoVelocidade.addEventListener ('click', () =>{
 // NIVEIS
 
 
+nivel10.addEventListener ('click', ()=> {
+       
+
+    nivel.textContent = niveisPoder [0];
+});
+
+
+nivel20.addEventListener ('click', ()=> {
+  
+
+    nivel.textContent = niveisPoder [1];
+});
+
+
+
+nivel30.addEventListener ('click', ()=> {
+
+
+
+    nivel.textContent = niveisPoder [2];
+});
+
+
+
+nivel40.addEventListener ('click', ()=> {
+
+
+
+    nivel.textContent = niveisPoder [3];
+});
 
 
 
 
-//DIGIEVOLUCAO 
+nivel50.addEventListener ('click', ()=> {
 
 
+
+    nivel.textContent = niveisPoder [4];
+});
 
    
     
