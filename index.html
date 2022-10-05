@@ -6,24 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>Evolua seu Digimon</title>
 </head>
 <body class="bg-indigo-500">
     <main>
         <section class="cabecalho">
              <img class="logo w-52 relative left-[600px] mt-3"  src="./assets/img/logo.png" alt="Logo de Digimon ">
-            <h1 class="cabecalho_titulo font-sans text-2xl relative left-[600px] mt-3">Evolua seu Digimon</h1>
+            <h1 class="cabecalho_titulo font-sans text-2xl relative left-[600px] mt-[30px]">Evolua seu Digimon</h1>
         </section>
 
 
-        <section>
+        <section class="flex justify-around mt-[100px]">
+
+            <div>
+                <img class="w-[250px]" src="./assets/img/koromon.png" alt="koromon">
+            </div>
+            
+            <div>
+                <ul>
+                    <li class="mb-[15px]"> Total Força</li>
+                    <li class="mb-[15px]"> Total Velocidade</li>
+                    <li class="mb-[15px]">Total Energia</li>
+                    <li class="mb-[15px]"> Total Poder</li>
+                    <li class="mb-[15px]"> Total Amizade</li>
+                </ul>
+            </div>
+
+            <div class="flex  flex-col">
+                
+                    <ul>
+                        <li><button type="button" class="text-white bg-gradient-to-r 
+                            from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br 
+                            focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 
+                            font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-[150px]">Força</button></li>
+
+
+                        <li><button type="button" class="text-white bg-gradient-to-r 
+                            from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br 
+                            focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 
+                            font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-[150px]">Velocidade</button></li>
+
+
+                        <li><button type="button" class="text-white bg-gradient-to-r 
+                            from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br 
+                            focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 
+                            font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-[150px]">Energia</button></li>
+
+
+                        <li><button type="button" class="text-white bg-gradient-to-r 
+                            from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 
+                            focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 
+                            font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-[150px]">Amizade</button</li>
+                        </ul>
+                
+            </div>
 
         </section>
     </main>
    
 </body>
 <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 <footer>
 
 </footer>
