@@ -127,14 +127,14 @@ botaoVelocidade.addEventListener ('click', () =>{
 
 nivel10.addEventListener ('click', ()=> {
        
-
+    trilha.play ();
     nivel.textContent = niveisPoder [0];
 });
 
 
 nivel20.addEventListener ('click', ()=> {
   
-
+   
     nivel.textContent = niveisPoder [1];
 });
 
@@ -143,7 +143,7 @@ nivel20.addEventListener ('click', ()=> {
 nivel30.addEventListener ('click', ()=> {
 
 
-
+    trilha.play ();
     nivel.textContent = niveisPoder [2];
 });
 
@@ -152,7 +152,7 @@ nivel30.addEventListener ('click', ()=> {
 nivel40.addEventListener ('click', ()=> {
 
 
-
+    
     nivel.textContent = niveisPoder [3];
 });
 
@@ -162,7 +162,7 @@ nivel40.addEventListener ('click', ()=> {
 nivel50.addEventListener ('click', ()=> {
 
 
-
+    
     nivel.textContent = niveisPoder [4];
 });
 
