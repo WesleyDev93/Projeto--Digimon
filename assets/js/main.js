@@ -34,7 +34,7 @@ const amizade = document.querySelector ('.numeroAmizade');
 
 const nivel = document.querySelector ('.numeroNivel');
 
-const niveisPoder =  ['10', '20', '30', '40', '50'];
+const niveisPoder =  ['10', '20', '30', '40',];
 
 // Personagem
 
@@ -92,6 +92,14 @@ nivel20.addEventListener ('click', ()=> {
 nivel30.addEventListener ('click', ()=> {
 
 
+    agumon.style.display = 'none'; 
+    koromon.style.display = 'none'; 
+    greymon.style.display = 'none'; 
+    metalgreymon.style.display = 'block'; 
+    wargreymon.style.display = 'none'; 
+
+
+
     trilha.play ();
     nivel.textContent = niveisPoder [2];
 });
@@ -101,6 +109,12 @@ nivel30.addEventListener ('click', ()=> {
 nivel40.addEventListener ('click', ()=> {
 
 
+    agumon.style.display = 'none'; 
+    koromon.style.display = 'none'; 
+    greymon.style.display = 'none'; 
+    metalgreymon.style.display = 'none'; 
+    wargreymon.style.display = 'block'; 
+
     
     nivel.textContent = niveisPoder [3];
 });
@@ -108,12 +122,7 @@ nivel40.addEventListener ('click', ()=> {
 
 
 
-nivel50.addEventListener ('click', ()=> {
 
-
-    
-    nivel.textContent = niveisPoder [4];
-});
 
    
     
