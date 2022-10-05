@@ -1,17 +1,5 @@
 // variaveis de botoes
 
-const botaoForca = document.querySelector ('.forca');
-
-
-const botaoVelocidade = document.querySelector ('.velocidade');
-
-
-const botaoEnergia = document.querySelector ('.energia');
-
-
-const botaoAmizade = document.querySelector ('.amizade');
-
-
 const nivel10 = document.querySelector ('.nivel10');
 
 
@@ -68,64 +56,20 @@ const wargreymon = document.querySelector ('.wargreymon');
 
 
 
-// Eventos
 
 
 
-// FORÇA
-botaoForca.addEventListener ('click', () =>{
-          
-   const resultadoForca = Math.floor( Math.random() * 3000);  
-
-     
-   forca.textContent = resultadoForca;
-
-});
-
-
-// VELOCIDADE
-botaoVelocidade.addEventListener ('click', () =>{  
-
-    const resultadoVelocidade= Math.floor( Math.random() * 4000);  
-
-
-    velocidade.textContent = resultadoVelocidade;
- 
-    
- });
-
-
-
-// ENERGIA
- botaoEnergia.addEventListener ('click', () =>{
-           
-    const resultadoEnergia = Math.floor( Math.random() * 5000); 
-    
-
-    energia.textContent = resultadoEnergia;
-    
-   
-    
- });
-
-
-
-// AMIZADE
- botaoAmizade.addEventListener ('click', () =>{
-          
-    const resultadoAmizade = Math.floor( Math.random() * 10000);  
-
-    amizade.textContent = resultadoAmizade;
-    
-   
-    
- });
-
-
-// NIVEIS
+// NIVEIS - EVENTOS
 
 
 nivel10.addEventListener ('click', ()=> {
+  
+
+    agumon.style.display = 'block'; 
+    koromon.style.display = 'none'; 
+    greymon.style.display = 'none'; 
+    metalgreymon.style.display = 'none'; 
+    wargreymon.style.display = 'none'; 
        
     trilha.play ();
     nivel.textContent = niveisPoder [0];
@@ -133,7 +77,12 @@ nivel10.addEventListener ('click', ()=> {
 
 
 nivel20.addEventListener ('click', ()=> {
-  
+     
+    agumon.style.display = 'none'; 
+    koromon.style.display = 'none'; 
+    greymon.style.display = 'block'; 
+    metalgreymon.style.display = 'none'; 
+    wargreymon.style.display = 'none'; 
    
     nivel.textContent = niveisPoder [1];
 });
