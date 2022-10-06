@@ -1,4 +1,26 @@
 
+.fundo {
+    
+    background-color: rgb(99 102 241);
+    opacity: 1;
+    width: 700px;
+
+
+}
+
+
+.mudaFundo {
+    background-image: url(../img/digievolução.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+   
+    
+}
+
+
 
 .agumon {
     display: none;
@@ -18,3 +40,6 @@
 .wargreymon {
     display: none;
 }
+
+
+

@@ -36,10 +36,18 @@ const nivel = document.querySelector ('.numeroNivel');
 
 const niveisPoder =  ['10', '20', '30', '40',];
 
+
+const titulo = document.querySelector ('.cabecalho_titulo');
+
+const statusTotais = document.querySelector ('.cabecalho_titulo');
+
+const textoStatus = document.querySelectorAll ('.textoStatus');
+
+
+
 // Personagem
 
 const textoNome = document.querySelector ('.textoNome');
-
 
 const koromon = document.querySelector ('.koromon');
 
@@ -52,9 +60,9 @@ const metalgreymon = document.querySelector ('.metalgreymon');
 const wargreymon = document.querySelector ('.wargreymon');
 
 
-//console.log (div);
+// BACKGROUND BODY
 
-
+const body = document.querySelector ('.background');
 
 
 
@@ -71,7 +79,7 @@ nivel10.addEventListener ('click', ()=> {
     metalgreymon.style.display = 'none'; 
     wargreymon.style.display = 'none'; 
        
-    trilha.play ();
+    
     nivel.textContent = niveisPoder [0];
     forca.textContent = 60;
     velocidade.textContent = 40;
@@ -79,6 +87,14 @@ nivel10.addEventListener ('click', ()=> {
     amizade.textContent = 80;
 
     textoNome.textContent = 'Agumon';
+
+
+    trocaEstilo ();
+    
+    trilha.style.transitionDelay = "2s";
+    trilha.play ();
+
+   
 
 });
 
@@ -90,6 +106,7 @@ nivel20.addEventListener ('click', ()=> {
     greymon.style.display = 'block'; 
     metalgreymon.style.display = 'none'; 
     wargreymon.style.display = 'none'; 
+
    
     nivel.textContent = niveisPoder [1];
     
@@ -99,6 +116,8 @@ nivel20.addEventListener ('click', ()=> {
     amizade.textContent = 100;
 
     textoNome.textContent = 'Greymon';
+
+    trocaEstilo ();
 });
 
 
@@ -114,7 +133,7 @@ nivel30.addEventListener ('click', ()=> {
 
 
 
-    trilha.play ();
+   
     nivel.textContent = niveisPoder [2];
 
     forca.textContent = 400;
@@ -123,6 +142,8 @@ nivel30.addEventListener ('click', ()=> {
     amizade.textContent = 120;
 
     textoNome.textContent = 'MetalGreymon';
+
+    trocaEstilo ();
 });
 
 
@@ -145,9 +166,71 @@ nivel40.addEventListener ('click', ()=> {
     amizade.textContent = 220;
 
     textoNome.textContent = 'WarGreymon';
+
+    trocaEstilo ();
+
+    trilha.style.transitionDelay = "2s";
+    trilha.play ();
 });
 
 
+
+
+
+//FUNÇÃO DE TROCA DE BACKGROUND
+
+
+function trocaEstilo () {
+    
+    
+
+     setTimeout(() => {
+        body.classList.add ('mudaFundo');
+
+
+        titulo.style.color = 'white';
+        statusTotais.style.color = 'white';
+        forca.style.color = 'white';
+        velocidade.style.color = 'white';
+        energia.style.color = 'white';
+        amizade.style.color = 'white';
+        nivel.style.color = 'white';
+        textoNome.style.color = 'white';
+        
+        for (let index = 0; index < textoStatus.length; index++) {
+            const element = textoStatus[index];
+
+            element.style.color = 'white';
+        }
+
+        
+
+        
+     },0000);
+   
+
+     setTimeout(() => {
+        body.classList.remove ('mudaFundo');
+
+        titulo.style.color = 'black';
+        statusTotais.style.color = 'black';
+        forca.style.color = 'black';
+        velocidade.style.color = 'black';
+        energia.style.color = 'black';
+        amizade.style.color = 'black';
+        nivel.style.color = 'black';
+        textoNome.style.color = 'black';
+
+        for (let index = 0; index < textoStatus.length; index++) {
+            const element = textoStatus[index];
+
+            element.style.color = 'black';
+        }
+
+        
+     },3000);
+     
+};
 
 
 
