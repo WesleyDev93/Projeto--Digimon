@@ -43,7 +43,7 @@ const statusTotais = document.querySelector ('.cabecalho_titulo');
 
 const textoStatus = document.querySelectorAll ('.textoStatus');
 
-
+const titulo02 = document.querySelector ('h2');
 
 // Personagem
 
@@ -73,6 +73,44 @@ const body = document.querySelector ('.background');
 nivel10.addEventListener ('click', ()=> {
   
 
+    nivelAgumon ();
+
+   
+
+});
+
+
+nivel20.addEventListener ('click', ()=> {
+     
+     nivelGreymon ();
+});
+
+
+
+nivel30.addEventListener ('click', ()=> {
+
+    nivelMetalGreymon ();
+    
+});
+
+
+
+nivel40.addEventListener ('click', ()=> {
+
+    nivelWarGreymon ();
+    
+});
+
+
+
+
+
+//FUNÇÕES 
+
+
+
+function nivelAgumon () {
+
     agumon.style.display = 'block'; 
     koromon.style.display = 'none'; 
     greymon.style.display = 'none'; 
@@ -91,16 +129,14 @@ nivel10.addEventListener ('click', ()=> {
 
     trocaEstilo ();
     
-    trilha.style.transitionDelay = "2s";
+    
     trilha.play ();
-
-   
-
-});
+}
 
 
-nivel20.addEventListener ('click', ()=> {
-     
+
+function nivelGreymon () {
+
     agumon.style.display = 'none'; 
     koromon.style.display = 'none'; 
     greymon.style.display = 'block'; 
@@ -118,12 +154,12 @@ nivel20.addEventListener ('click', ()=> {
     textoNome.textContent = 'Greymon';
 
     trocaEstilo ();
-});
+}
 
 
 
-nivel30.addEventListener ('click', ()=> {
 
+function nivelMetalGreymon () {
 
     agumon.style.display = 'none'; 
     koromon.style.display = 'none'; 
@@ -143,13 +179,13 @@ nivel30.addEventListener ('click', ()=> {
 
     textoNome.textContent = 'MetalGreymon';
 
-    trocaEstilo ();
-});
+    trocaEstiloBrasao ();
+}
 
 
 
-nivel40.addEventListener ('click', ()=> {
 
+function nivelWarGreymon () {
 
     agumon.style.display = 'none'; 
     koromon.style.display = 'none'; 
@@ -167,17 +203,15 @@ nivel40.addEventListener ('click', ()=> {
 
     textoNome.textContent = 'WarGreymon';
 
-    trocaEstilo ();
+    trocaEstiloBrasao (); 
 
-    trilha.style.transitionDelay = "2s";
     trilha.play ();
-});
+}
 
 
 
 
 
-//FUNÇÃO DE TROCA DE BACKGROUND
 
 
 function trocaEstilo () {
@@ -189,6 +223,7 @@ function trocaEstilo () {
 
 
         titulo.style.color = 'white';
+        titulo02.style.color = 'white';
         statusTotais.style.color = 'white';
         forca.style.color = 'white';
         velocidade.style.color = 'white';
@@ -213,6 +248,7 @@ function trocaEstilo () {
         body.classList.remove ('mudaFundo');
 
         titulo.style.color = 'black';
+        titulo02.style.color = 'black';
         statusTotais.style.color = 'black';
         forca.style.color = 'black';
         velocidade.style.color = 'black';
@@ -236,7 +272,59 @@ function trocaEstilo () {
 
 
    
+    function trocaEstiloBrasao() {
+
+
+        setTimeout(() => {
+            body.classList.add ('brasao');
     
+    
+            titulo.style.color = 'white';
+            titulo02.style.color = 'white';
+            statusTotais.style.color = 'white';
+            forca.style.color = 'white';
+            velocidade.style.color = 'white';
+            energia.style.color = 'white';
+            amizade.style.color = 'white';
+            nivel.style.color = 'white';
+            textoNome.style.color = 'white';
+            
+            for (let index = 0; index < textoStatus.length; index++) {
+                const element = textoStatus[index];
+    
+                element.style.color = 'white';
+            }
+    
+            
+    
+            
+         },0000);
+       
+    
+         setTimeout(() => {
+            body.classList.remove ('brasao');
+    
+            titulo.style.color = 'black';
+            titulo02.style.color = 'black';
+            statusTotais.style.color = 'black';
+            forca.style.color = 'black';
+            velocidade.style.color = 'black';
+            energia.style.color = 'black';
+            amizade.style.color = 'black';
+            nivel.style.color = 'black';
+            textoNome.style.color = 'black';
+    
+            for (let index = 0; index < textoStatus.length; index++) {
+                const element = textoStatus[index];
+    
+                element.style.color = 'black';
+            }
+    
+            
+         },4000);
+         
+    };
+
 
 
 
