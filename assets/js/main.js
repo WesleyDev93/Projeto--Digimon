@@ -38,7 +38,7 @@ const niveisPoder =  ['10', '20', '30', '40',];
 
 // Personagem
 
-const div = document.querySelector ('.evolucao');
+const textoNome = document.querySelector ('.textoNome');
 
 
 const koromon = document.querySelector ('.koromon');
@@ -73,6 +73,13 @@ nivel10.addEventListener ('click', ()=> {
        
     trilha.play ();
     nivel.textContent = niveisPoder [0];
+    forca.textContent = 60;
+    velocidade.textContent = 40;
+    energia.textContent = 50;
+    amizade.textContent = 80;
+
+    textoNome.textContent = 'Agumon';
+
 });
 
 
@@ -85,6 +92,13 @@ nivel20.addEventListener ('click', ()=> {
     wargreymon.style.display = 'none'; 
    
     nivel.textContent = niveisPoder [1];
+    
+    forca.textContent = 200;
+    velocidade.textContent = 30;
+    energia.textContent = 80;
+    amizade.textContent = 100;
+
+    textoNome.textContent = 'Greymon';
 });
 
 
@@ -102,6 +116,13 @@ nivel30.addEventListener ('click', ()=> {
 
     trilha.play ();
     nivel.textContent = niveisPoder [2];
+
+    forca.textContent = 400;
+    velocidade.textContent = 270;
+    energia.textContent = 180;
+    amizade.textContent = 120;
+
+    textoNome.textContent = 'MetalGreymon';
 });
 
 
@@ -117,6 +138,13 @@ nivel40.addEventListener ('click', ()=> {
 
     
     nivel.textContent = niveisPoder [3];
+
+    forca.textContent = 650;
+    velocidade.textContent = 470;
+    energia.textContent = 380;
+    amizade.textContent = 220;
+
+    textoNome.textContent = 'WarGreymon';
 });
 
 
