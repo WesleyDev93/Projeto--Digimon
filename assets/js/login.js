@@ -16,3 +16,8 @@ function validaDados () {
         alert ('Sua senha esta errada  -- Administrador será avisado !');
     }
 }
+
+
+
+
+
